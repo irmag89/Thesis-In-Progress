@@ -13,7 +13,7 @@ total_lemmas_filtered_not_repeated_corrected=[];
 total_lemmas_filtered=[];
 print("charging 10%...")
 
-#Book name
+#Book name, cambiar el valor de esta variable por el nombre de cada uno de los archivos
 BookName= 'matematicas_6';
 
 #Importing the dataset
@@ -109,6 +109,8 @@ for e in range(len(total_lemmas_filtered_not_repeated)):
             
 #Concatenate lists to filter
 ListFiltered= LCountNOUN + LCountVERB + LCountAUX;
+
+#ordenar alfabeticamente
   
 #Correction to the stemmer -to avoid a single character-
 print("charging 90%...")
