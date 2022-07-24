@@ -63,6 +63,11 @@ for element in words_exclusive_LMS:
         words_new_N0_to_N1_LMS.append(element)
         #add new word detected to "all learned words list"
         DatasetList3.append(element)
+
+#order
+words_new_N0_to_N1_LMS.sort()
+words_exclusive_LMS.sort()
+DatasetList3.sort()
         
 #Save new words
 with open(saveNewWordsIn+'_LR.txt', 'w', encoding="utf-8") as temp_file:

@@ -45,7 +45,11 @@ for element in DatasetList1:
         words_new_N0_to_N1.append(element)
         #add new word detected to "all learned words list"
         DatasetList2.append(element)
-        
+
+#order
+words_new_N0_to_N1.sort()
+DatasetList2.sort()
+
 #Save new words
 with open(saveNewWordsIn+'_LR.txt', 'w', encoding="utf-8") as temp_file:
     for item in words_new_N0_to_N1:

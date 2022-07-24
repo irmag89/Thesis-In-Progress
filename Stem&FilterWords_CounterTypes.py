@@ -94,6 +94,11 @@ for e in range(len(total_lemmas)):
 #Concatenate lists to filter
 ListFiltered= LCountNOUN + LCountVERB + LCountAUX;
 
+#order
+LCountNOUN.sort()
+LCountVERB.sort()
+LCountAUX.sort()
+
 #Save types of words NOUN
 with open(BookName +'_LR_NOUN.txt', 'w', encoding="utf-8") as temp_file:
     for item in  LCountNOUN:

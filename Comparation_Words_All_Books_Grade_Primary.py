@@ -75,6 +75,9 @@ for element in AllWordsDataset:
     if element not in AllWordsDataset_Not_Repeated: 
         AllWordsDataset_Not_Repeated.append(element)
 
+#order
+AllWordsDataset_Not_Repeated.sort()
+
 #Save set of words in the grade list
 with open(savebookin +'_LR.txt', 'w', encoding="utf-8") as temp_file:
     for item in  AllWordsDataset_Not_Repeated:
